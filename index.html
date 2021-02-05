@@ -15,38 +15,34 @@
             <h2>Moment of inertia</h2>
             <div class="form-control">                
                 <select id="units_in" class="browser-default">
-                    <option value="" disabled selected>Jednostki wejsciowe</option>
+                    <option value="" disabled selected>Input units</option>
                     <option value="1">mm</option>
-                    <option value="2">cm</option>
+                    <option value="2" selected="selected">cm</option>
                     <option value="3">m</option>
                 </select> 
-                <small> Error message</small>                 
                  
                 <select id="units_out" class="browser-default">
-                    <option value="" disabled selected>Jednostki wyjsciowe</option>
+                    <option value="" disabled selected>Output units</option>
                     <option value="1">mm^4</option>
-                    <option value="2">cm^4</option>
+                    <option value="2" selected="selected">cm^4</option>
                     <option value="3">m^4</option>
                 </select>      
                 <small> Error message</small>            
             </div>
             <img src="./static/moi_rect_cross.PNG">
             
-            <div class="form-control">
-                <label for="profile_w">Szerokość</label>
+            <div class="form-control"> 
                     <input type="text" id="profile_w" placeholder="b">
                     <small> Error message</small>
                 </div>
-                <div class="form-control">
-                    <label for="profile_h">Wysokość</label>                
+                <div class="form-control">               
                     <input type="text" id="profile_h" placeholder="h">
                     <small> Error message</small>
                 </div> 
-                <button   type="submit" name="action">Licz</button>
+                <button   type="submit" name="action">Calculate</button>
             </form>  
-            <div id="results" class="results">
-                <p>Ix=</p>
-                <p>Iy=</p>
+            <div id="results" class="results" >
+              
             </div>
     </div>
 
